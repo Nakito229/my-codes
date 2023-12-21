@@ -1,0 +1,137 @@
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+header .shopping img{
+    width: 40px;
+}
+.shopping span{
+    background:  rgb(197, 81, 81);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 3%;
+    left: 61%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+.list .item{
+    text-align: center;
+    background-color:white;
+    padding: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 2px solid  rgba(0, 0, 0, 0.418) ;
+}
+.list .item img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color:  rgb(143, 185, 143);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: none;
+}
+.list .item button:hover{
+    background-color: rgb(118, 155, 118);
+    color: rgb(236, 236, 236);
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.788);
+    height: 500px;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.418) ;
+    border-bottom-left-radius: 30px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0.418);
+}
+.active .card{
+    left: calc(100% - 400px);
+}
+
+.card h1{
+    color: rgba(0, 0, 0, 0.418);
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: rgb(143, 185, 143) ;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.418);
+}
+.card .checkOut div:nth-child(2){
+    background-color: white;
+    border:2px solid rgb(118, 155, 118);
+    color: rgb(118, 155, 118);
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.418);
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+
+
+
+

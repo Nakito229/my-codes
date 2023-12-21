@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+  
+<!-- ..........hero................ -->
+    <header class="PC_header">
+        <div>
+<img src="https://cdn2.mage.space/content/viZGQtPhvmY5gaHTw5wTftNSRdh1/c/88e97e52efb04b75bf10ccf20b9b9eaf/88e97e52efb04b75bf10ccf20b9b9eaf.jpg" alt="">
+
+<input type="search" placeholder="search" id="searchBar" onkeyup="filter()">
+
+<button id="Cart"  class="Cart" onclick="Popup()">Cart</button>
+
+
+<button id="Sign_in">Sign in</button></div>
+    </header>
+
+<header class="Phone_header">
+    <img src="https://cdn2.mage.space/content/viZGQtPhvmY5gaHTw5wTftNSRdh1/c/88e97e52efb04b75bf10ccf20b9b9eaf/88e97e52efb04b75bf10ccf20b9b9eaf.jpg" alt="">
+
+<input type="search" placeholder="search" id="searchBar" onkeyup="filter()">
+ 
+
+<img id="manu" src="https://i.pinimg.com/564x/1b/e3/bd/1be3bd1726c89f14eafd742a55c7aed8.jpg" alt="">
+
+
+</header>
+
+<div id="Phones_manu">
+
+
+</div>
+
+
+<!-- ...............sign in................. -->
+
+
+<div id="Sign_in-section">
+    <button onclick="hidePopup()" class="close">X</button>
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password">
+    <button class="btn">Sign in</button>
+
+</div>
+
+
+
+<!-- ...............cart............... -->
+<div class="card">
+    <h1>Car</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+    </div>
+</div>
+
+<!-- .........home section.............. -->
+
+<section class="home_section">
+
+    <div class="btns">
+        <button class="category" onclick="Filter('All')">All</button>
+        <button class="category" onclick="Filter('Phone')">Phones</button>
+        <button class="category" onclick="Filter('Laptop')">Laptops</button>
+        <button class="category" onclick="Filter('Camera')">Cameras</button>
+        <button class="category" onclick="Filter('HeadPhone')">Headphones</button>
+    </div>
+
+<div class="img">
+<img src="https://i.etsystatic.com/24335534/r/il/5bb6f6/3179855952/il_794xN.3179855952_nfpw.jpg" alt="">
+<img src="https://i.pinimg.com/564x/5a/4d/e2/5a4de27e6f15f6a6963ecf47514c1b74.jpg" alt="">
+<img src="https://i.pinimg.com/564x/d7/68/da/d768dae9a9ab7a2a91e25070b3d957bc.jpg" alt="">
+
+
+
+</div>
+
+
+
+</section>
+    
+<!-- ...............Cards................ -->
+
+<section class="Cards">
+    
+<div id="CardsContainer" ></div>
+    
+</section>
+<!-- ...........brands............ -->
+
+<section class="brands">
+
+    <div id="brandContainer">
+        <img src="https://i.pinimg.com/564x/48/37/d0/4837d0a0512fe65bbd7deb4115044b0f.jpg" alt="">
+        <img src="https://i.pinimg.com/564x/76/50/20/7650202e956e24e2b92449ca3e888e51.jpg" alt="">
+        <img src="https://i.pinimg.com/564x/dc/ad/cb/dcadcbfc0609a209c9408112aae51cb4.jpg" alt="">
+        <img src="https://i.pinimg.com/564x/32/b7/4a/32b74a120a3d133a644758ebeee2fdc0.jpg" alt="">
+        <img src="https://i.pinimg.com/564x/3c/f5/d1/3cf5d1e63993e4ee2b0c88b8f37042bb.jpg" alt="">
+    </div>
+
+</section>
+
+
+<!-- ..............information.................. -->
+
+
+<section class="info">
+
+
+    <div class="container">
+<div>
+<h1>MORE ABOUT US!</h1>
+        <p>From sleek smartphones to powerful laptops, 
+            immersive VR experiences to smart home solutions, we've got it all.
+             Our selection is not just about products; it's about possibilities. 
+            Stay ahead of the curve with the most advanced tech on the market.</p>
+</div>
+        <img src="https://i.pinimg.com/564x/3b/ea/7c/3bea7c92ed9ecc0605ca099970e75035.jpg" alt="">
+
+    </div>
+
+
+</section>
+
+<section class="Text">
+
+<div class="img2">
+
+    <p>At TechTrends, we pride ourselves on being more than just an online technology store;
+         we are your gateway to the future.
+         Explore a world where innovation meets convenience, 
+         and where the latest tech trends are just a click away.</p>
+
+    </div>
+
+</section>
+<!-- ...........footer.............. -->
+
+<footer>
+    <img src="https://cdn2.mage.space/content/viZGQtPhvmY5gaHTw5wTftNSRdh1/c/88e97e52efb04b75bf10ccf20b9b9eaf/88e97e52efb04b75bf10ccf20b9b9eaf.jpg" class="Shop" alt="">
+
+
+    <div class="footer-container">
+
+        <div>
+            <h2>Explore us</h2>
+            <p>Our career</p>
+            <p>Privacy</p>
+            <p>Terms & Conditions</p>
+        </div>
+        
+        <div>
+            <h2>Contact us</h2>
+            <p>OnlineShop@yahoo.com</p>
+            <p>025-***-***</p>
+            <p>More help</p>
+        </div>
+        
+        </div>
+        
+        
+        <div>
+<h3>Contact Us:</h3>
+<div class="logos">
+<img src="https://clipart.info/images/ccovers/1509135360facebook-logo-png-white.png" alt="">
+<img src="https://www.pngkey.com/png/full/1-19361_watercolor-instagram-icon-png-instagram-logo-white-on.png" alt="">
+<img src="https://www.pinclipart.com/picdir/big/578-5789236_logo-twitter-png-blanc-white-twitter-logo-transparent.png" alt="">
+</div>
+</div>
+
+
+</footer>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <script src="card.js"></script>
+</body>
+</html>
